@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>
+        SPEED TEST TEMPLATE
+    </title>
+</head>
+
+<body></body>
+
+<script>
+    var iterations = 10000;
+    var start1 = 0;
+    var start2 = 0;
+    var end1 = 0;
+    var end2 = 0;
+
+
+    // Test 1;
+    start1 = Date.now();
+    for (var i = 0; i < iterations; i++) {
+
+    }
+    end1 = Date.now();
+
+    // Test 2;
+    start2 = Date.now();
+    for (var i = 0; i < iterations; i++) {
+
+    }
+    end2 = Date.now();
+
+    var diff1 = end1 - start1;
+    var diff2 = end2 - start2;
+
+
+    console.log("speed test #1: " + diff1 + " milliseconds.");
+    console.log("speed test #2: " + diff2 + " milliseconds.");
+    console.log("Difference between tests: " + (diff1 - diff2) + " milliseconds.");
+    console.log("Percent Difference between tests: " + Math.round(((diff2 - diff1) / diff1) * 10000) / 100 + "%.");
+
+</script>
+
+</html>
